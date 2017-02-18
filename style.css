@@ -39,7 +39,7 @@ body {
   display: block; }
 .contents .display-title {
   display: none; }
-.contents p {
+.contents .sub-script {
   padding: 0 20px;
   margin-bottom: 70px; }
 .contents .container {
@@ -66,7 +66,8 @@ body {
         margin-bottom: 0px; }
     .contents .container .box p {
       width: 85%;
-      margin-top: 0; }
+      margin-top: 0;
+      margin-bottom: 15px; }
 
 .button {
   width: 80%;
