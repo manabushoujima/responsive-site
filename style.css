@@ -1,0 +1,101 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Arvo);
+html {
+  font-size: 62.5%; }
+
+body {
+  color: #000000;
+  font-size: 1.8rem;
+  font-family: "游ゴシック", YuGothic, "メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  background-color: #f5f5f5;
+  letter-spacing: 0.1rem;
+  margin: 0; }
+
+.text-center {
+  text-align: center; }
+
+.block-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.capitalize {
+  text-transform: capitalize; }
+
+.arvo {
+  font-family: 'Arvo', serif; }
+
+.main {
+  display: block;
+  width: 100%;
+  height: 250px;
+  background-image: url(./image/yakitori.jpg);
+  background-size: cover;
+  background-position: center center; }
+
+.contents h2 {
+  padding: 60px 0 0 0; }
+.contents .mobile-title {
+  display: block; }
+.contents .display-title {
+  display: none; }
+.contents p {
+  padding: 0 20px;
+  margin-bottom: 70px; }
+.contents .container {
+  background-color: #800000;
+  padding: 80px 30px;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  -webkit-flex-direction: column;
+  flex-direction: column; }
+  .contents .container .box {
+    -webkit-flex: 1;
+    flex: 1;
+    width: 85%;
+    background-color: #f5f5f5;
+    margin-bottom: 10px; }
+    .contents .container .box .box-title {
+      color: #32cd32;
+      display: block;
+      width: 100%;
+      font-size: 2.5rem; }
+      .contents .container .box .box-title h3 {
+        margin-top: 15px;
+        margin-bottom: 0px; }
+    .contents .container .box p {
+      width: 85%;
+      margin-top: 0; }
+
+.button {
+  width: 80%;
+  height: 4.0rem;
+  line-height: 4.0rem;
+  background-color: #32cd32;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px; }
+
+@media (min-width: 769px) {
+  .main {
+    height: 500px; }
+
+  .contents .mobile-title {
+    display: none; }
+  .contents .display-title {
+    display: block; }
+  .contents .container {
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-bitween;
+    padding: 80px 60px; }
+
+  .box {
+    width: 33%;
+    margin: 0 10px; }
+
+  .button {
+    width: 30%; } }
+
+/*# sourceMappingURL=style.css.map */

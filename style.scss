@@ -1,0 +1,169 @@
+@import "compass";
+@import url(https://fonts.googleapis.com/css?family=Arvo);
+
+
+$baseFontFamily :"游ゴシック", YuGothic,"メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+
+$baseColor: #f5f5f5;
+$subColor: #800000;
+$keyColor: #32cd32;
+$fontColor: #000000;
+
+//base------------------
+html{
+    font-size: 62.5%;
+}
+
+body{
+    color: $fontColor;
+    font-size: 1.8rem;
+    font-family: $baseFontFamily;
+    background-color: $baseColor;
+    letter-spacing: 0.1rem;
+    margin: 0;
+}
+
+
+//align-----------------------
+.text-center{
+    text-align: center;
+}
+
+
+//layout-------------------
+.block-center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+//font------------------
+.capitalize{
+    text-transform: capitalize;
+}
+.arvo{
+    font-family: 'Arvo', serif;
+}
+
+
+
+
+//main---------------
+.main {
+    display: block;
+    width: 100%;
+    height: 250px;
+    
+    background-image: url(./image/yakitori.jpg);
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+//content----------------
+
+.contents{
+    h2{
+        padding: 60px 0 0 0;
+    }
+        .mobile-title{
+            display:block;
+        }
+        
+        .display-title{
+            display: none;
+        }
+
+    p{
+        padding: 0 20px;
+        margin-bottom: 70px;
+    }
+
+    .container {
+        background-color: $subColor;
+        padding: 80px 30px;
+        
+    
+        @include display-flex;
+        justify-content: space-between;
+        @include flex-direction(column);
+        
+        .box{
+            @include flex(1);
+            width: 85%;
+            background-color: $baseColor;
+            margin-bottom: 10px;
+            
+            .box-title{
+                
+                color: $keyColor;
+                display: block;
+                width: 100%;
+                font-size: 2.5rem;
+                
+                h3{
+                    margin-top: 15px;
+                    margin-bottom: 0px;
+                }
+                
+                
+            }
+            
+            p{
+                width: 85%;
+                margin-top: 0;
+            }
+        
+        }
+    }
+}
+
+//button-container------------
+
+.button{
+    width: 80%;
+    height: 4.0rem;
+    line-height: 4.0rem;
+    background-color: $keyColor;
+    @include border-radius(4px);
+}
+
+
+//desktop-----------------
+@media(min-width:769px){
+    
+    .main{
+        height: 500px;
+    }
+    
+    .contents{
+        
+        .mobile-title{
+            display: none;
+        }
+        
+        .display-title{
+            display: block;
+        }
+        
+        .container{
+        @include flex-direction(row);
+        justify-content: space-bitween;
+        
+        padding: 80px 60px;
+        }
+    }
+    
+
+    .box{
+        width: 33%;
+        margin: 0 10px;
+    }
+    
+    
+    .button{
+        width: 30%;
+    }
+    
+}
+
